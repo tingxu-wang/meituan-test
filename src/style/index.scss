@@ -1,3 +1,14 @@
-body{
-  background: url('../assets/test.png');
-}
+/* 
+ * 样式主文件
+*/
+
+/* 全局变量 */
+$radius:5px;
+
+/* 全局样式 */
+@import './global';
+
+/* 下拉框样式 */
+@import './select';
+
+/* 日历样式 */
