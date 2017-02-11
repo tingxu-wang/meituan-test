@@ -27,6 +27,13 @@ module.exports={
         path.resolve(__dirname,'src')
       ],
       loader:'style-loader!css-loader!sass-loader?sourceMap=true&sourceMapContents=true'
+    },{
+      test: /\.(png|jpe?g|gif|svg)$/,
+      loader: 'url-loader',
+      query: {
+        limit: 10240, // 10KB 以下使用 base64
+        name: 'dist/img/[name]-[hash:6].[ext]'
+      }
     }]
   },
 
